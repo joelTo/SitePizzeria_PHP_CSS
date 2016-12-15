@@ -1,0 +1,40 @@
+@media screen and (min-width: 801px) {
+  
+
+
+body
+{
+    display: inline-block;
+    
+}
+
+.header
+{
+    background-color: red;
+   
+}
+
+.main
+{
+    background-color: blue;
+    
+}
+
+.aside-1
+{
+     background-color: yellow;
+     
+}
+
+.aside-2
+{
+    background-color: pink;
+    
+}
+
+.footer
+{
+    background-color: green;
+    
+}
+}

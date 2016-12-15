@@ -1,0 +1,42 @@
+/* On travaille sur la balise body, donc sur TOUTE la page */
+html
+{
+    font-family:Helvetica,Arial;
+}
+
+body
+{
+    background-color: #000099;
+}
+
+
+h1
+{
+    color:white;
+}
+li
+{
+    background-color: white;
+    display: block;
+    text-align: center;
+    padding :15px 0 0 0 ;
+    font-size: 1em;
+    margin:5px;
+    border:2px;
+    width: 200px;
+    height: 40px;
+}
+
+li:hover 
+{
+    background-color: white;
+    
+}
+
+button
+{
+    text-align:center;
+
+}
+
+

@@ -1,0 +1,43 @@
+ <!doctype html>
+<html>
+   <head>
+       <title>Gestion : Florence Pizza</title>
+        <link href="css/style-gestionClients.css" rel="stylesheet">
+   </head>
+  
+   <body>
+       <header>
+           <h1>Gestion des clients</h1>
+           <h2> Creation d'un client </h2>
+       </header>
+       
+        <section>
+       <h3><a href="index.html" id="retourIndex"> << Retour a l'accueil </a></h3>
+       <form method="POST" action="script\ajouter_client.php">
+       <ol>
+           <li>
+       <label>Nom  </label>
+       <input type ="text" name="nom" />
+           </li>
+       <li>
+       <label> Penom </label>
+       <input type ="text" name ="prenom"/>
+       </li>
+       
+       <li>
+       <label>Ville </label>
+        <input type ="text" name="ville"/>
+       </li>
+       
+       <li>
+       <label> Age </label>
+       <input type="date" name="age"/>
+       </li>
+       <li>
+       <input type="submit" class="btn" value="Ajouter" id="buttonAjouter"/>
+       </li>
+       </ol>
+       </form>
+       </section>
+   </body>
+</html>

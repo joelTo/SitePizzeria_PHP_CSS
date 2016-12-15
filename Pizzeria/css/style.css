@@ -1,0 +1,54 @@
+body {
+    font-family: "Helvetica";
+    background-color: #EFECCA;
+}
+h1 {
+    color: #C03000;
+}
+h2 {
+    color: #4BB5C1;
+}
+a
+{
+    color: white;
+    text-decoration:none; 
+}
+
+section h2
+{
+     color: red;
+}
+#navigation li {
+}
+#navigation li a {
+}
+#contact {
+}
+
+nav li
+{
+    
+    background-color: red;
+    border: 2px solid black;
+    color:white;
+    display: inline-block;
+    text-align: center;
+    padding :15px 5px;
+    font-size: 1em;
+    margin:5px;
+    width: 200px;
+    height: 40px;
+
+}
+
+li:hover
+{
+    color:white;
+    background-color:green; 
+    text-decoration: underline;
+}
+#contact
+{
+    color: #000099;
+    font-weight: bold;
+}

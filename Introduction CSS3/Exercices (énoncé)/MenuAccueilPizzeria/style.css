@@ -1,0 +1,20 @@
+body {
+    font-family: "Helvetica";
+    background-color: #EFECCA;
+}
+h1 {
+    color: #C03000;
+}
+h2 {
+    color: #4BB5C1;
+}
+a {
+    color: #96CA2D;
+    text-decoration: none;
+}
+#navigation li {
+}
+#navigation li a {
+}
+#contact {
+}

@@ -1,0 +1,21 @@
+ <!doctype html>
+<html>
+   <head>
+       <title>Gestion : Florence Pizza</title>
+   </head>
+   <body>
+       <header>
+           <h1>Gestion des pizzas</h1>
+           <h2> Ajout d'une pizza </h2>
+       </header>
+       <h3><a href="index.html"> Retour a l'accueil</h3>
+       <form method="POST" action="/ajouter_pizza.php">
+        Libelle <input type ="text" name="Libelle" />
+       <br>Reference <input type ="text" name ="Reference"/>
+       <br>Prix <input type ="text" name="Prix"/>
+       <br>Photo <input type="file" name="Photo"/>
+       <br>
+       <input type="button" class="btn" value="Ajouter"/>
+       </form>
+   </body>
+</html>

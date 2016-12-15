@@ -1,0 +1,48 @@
+<html>
+  <head>
+	<meta charset="UTF-8" />	
+    <title>Gestion des clients</title>
+  </head>
+<body>
+	<h1>Gestion des clients</h1>
+	<a href="./AjouterClient.html">Ajout</a> / <a href="./accueil.html">Retour à l'accueil</a>
+	<h2>Liste des clients</h2>
+	<table width=50%>
+	<thead>
+		<tr>
+			<th align=left>Id.</th>
+			<th align=left>NOM</th>
+			<th align=left>Pr&eacute;nom</th>
+			<th align=left>Ville</th>
+			<th align=left>Age</th>
+			<th colspan=2></th>
+		</tr>
+	</thead>
+	<tbody>
+<?php
+
+  $cnx = mysql_connect( "localhost:8889", "root", "root" ) or die(mysql_error());
+  $db  = mysql_select_db( "pizzeria" );
+  $sql = mysql_real_escape_string("SELECT * FROM client");
+  mysql_query("SET NAMES 'utf8'");
+  $reponse = mysql_query($sql, $cnx) or die( mysql_error() );
+  
+  while ($donnees=mysql_fetch_array($reponse))
+  {
+?>
+    <tr>
+    	<td><?php echo $donnees["id"]; ?></td>
+    	<td><?php echo $donnees["nom"]; ?></td>
+    	<td><?php echo $donnees["prenom"]; ?></td>
+    	<td><?php echo $donnees["ville"]; ?></td>
+    	<td><?php echo $donnees["age"]; ?></td>
+    	<td><a href="modifier_client.php?id=<?php echo $donnees["id"]; ?>">Modifier</a></td>
+    	<td><a href="supprimer_client.php?id=<?php echo $donnees["id"]; ?>">Supprimer</a></td>
+	</tr>
+<?php
+}
+?>
+	</tbody>
+</table>
+</body>
+</html>

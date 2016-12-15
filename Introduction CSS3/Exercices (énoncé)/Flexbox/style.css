@@ -1,0 +1,63 @@
+.wrapper {
+/* penser à tous les navigateurs */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: ????;
+  flex-flow: ????;
+  
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Tous les items sont à 100% width */
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+/* Ordre selon l'approche mobile-first
+ * 1. header
+ * 2. nav
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
+
+/* Écrans moyens */
+@media all and (min-width: 600px) {
+    /* Les 2 sidebars partagent une rangée */
+}
+/* Grands écrans */
+@media all and (min-width: 800px) {
+    /* on intervertit l'ordre de la 1ère sidebar et de main
+    * on dit à l'élément de prendre 2 fois plus de place en largeur que les 2 sidebars */
+}
+
+body {
+  padding: 2em; 
+}
